@@ -1,0 +1,83 @@
+#table-gestion-calificaciones th {
+  background-color: #63aafa;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+}
+
+#table-gestion-calificaciones td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+#table-gestion-calificaciones input[type="number"]::-webkit-inner-spin-button,
+#table-gestion-calificaciones input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#table-gestion-calificaciones input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+#table-gestion-calificaciones input {
+  text-align: center;
+  width: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+#table-gestion-calificaciones input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#table-gestion-calificaciones input {
+  color: inherit;
+}
+
+#table-gestion-calificaciones input::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+#table-gestion-calificaciones input.red {
+  color: red;
+}
+
+#table-gestion-calificaciones input.green {
+  color: green;
+}
+
+#btn-guardar-gestion-calificaciones {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#btn-guardar-gestion-calificaciones:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#btn-guardar-gestion-calificaciones:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

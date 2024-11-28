@@ -1,0 +1,190 @@
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr .red {
+  background-color: red;
+  color: black;
+}
+
+tr .blue {
+  background-color: lightblue;
+  color: black;
+}
+
+tr .yellow {
+  background-color: yellow;
+  color: black;
+}
+
+tr .purple {
+  background-color: purple;
+  color: white;
+}
+
+tr .green {
+  background-color: green;
+  color: white;
+}
+
+/* Estilos animación asistencia */
+.asistencia-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progress-circle {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 0 5px rgb(110, 110, 110);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wave {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+.wave:before,
+.wave:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: black;
+  transform: translate(-50%, -75%);
+}
+
+.wave:before {
+  border-radius: 45%;
+  background: rgba(255, 255, 255, 1);
+  animation: animate 5s ease infinite;
+}
+
+.wave:after {
+  border-radius: 40%;
+  background: rgba(255, 255, 255, 0.5);
+  animation: animate 10s linear infinite;
+}
+
+.progress-circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, 80%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -100%) rotate(360deg);
+  }
+}
+
+
+/* Estilos asignaturas */
+.student-title {
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-title:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.list-asingnaturas-alumno {
+  list-style: none;
+  border: 2px solid #cfd4da;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-asingnaturas-alumno::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 4px;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.list-asingnaturas-alumno:hover {
+  background-color: #edfbff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-asingnaturas-alumno:hover::before {
+  background-color: #007bff;
+}
+
+.container-alumno-asignaturas {
+  border: 2px solid #cdd3da;
+  border-radius: 25px;
+  padding: 0.6rem;
+  background-color: white;
+  height: 30rem;
+  overflow: auto;
+}
+
+.container-alumno-fecha {
+  border: 2px solid #cdd3da;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: white;
+  max-height: 15rem;
+  overflow: auto;
+}
+
+.container-alumno-asistencia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #cdd3da;
+  border-radius: 25px;
+  padding: 0.6rem;
+  background-color: white;
+  height: 15rem;
+}

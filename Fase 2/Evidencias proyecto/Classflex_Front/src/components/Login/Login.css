@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: Montserrat;
+  background-color: #f0f8ff;
+}
+
+#form-login {
+  height: 100vh;
+  font-size: 18px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  width: 25rem;
+  height: 35rem;
+}
+
+#form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+#form-login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+/* Se eliminan todos los efectos al hacer click en un input */
+#form-login input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: none;
+}
+
+/* Se aplican nuevos estilos al hacer click en un input.*/
+#form-login input:focus {
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 191, 255, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#form-login input[type="email"],
+#form-login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0%;
+  font-size: 18px;
+}
+
+/* Se aplica al campo de correo si la variable isEmailInvalid es True */
+.is-invalid {
+  border-color: red;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+#form-login button {
+  width: 10rem;
+  padding: 10px;
+  background-color: #00bfff;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#form-login button:hover {
+  background-color: #009acd;
+}
+
+#user-icon {
+  border: 1px solid #00bfff;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #00bfff;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#user-icon:hover {
+  color: white;
+  background-color: #00bfff;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
+}
+
+@media (width < 768px) {
+  #logo-column {
+    width: 100%; /* El logo ocupa todo el ancho disponible */
+    height: auto; /* Ajustar la altura para adaptarse al contenido */
+    border-bottom: 1px solid #ccc; /* Simula una separación tipo navbar */
+    padding: 10px;
+    position: fixed; /* Fija el logo en la parte superior */
+    top: 0;
+    left: 0; /* Asegúrate de que esté por encima de otros elementos */
+    background-color: white; /* Fondo blanco para simular una barra */
+    z-index: 1000;
+  }
+
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #logo-container img {
+    width: 30%; /* Ajusta el tamaño del logo */
+  }
+
+  #form-login {
+    padding-top: 20rem;
+    margin-bottom: 15rem;
+  }
+
+  #form {
+    width: 20rem;
+  }
+}
+
+#logo {
+  max-width: 100%;
+  height: auto;
+}
+
+#link-reset {
+  cursor: pointer;
+  padding-bottom: 1rem;
+  text-align: start;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #06a5da;
+}
+
+#link-reset:hover {
+  color: rgb(0, 0, 248);
+}

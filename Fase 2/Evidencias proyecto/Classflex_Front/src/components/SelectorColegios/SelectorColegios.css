@@ -1,0 +1,52 @@
+:root {
+  --baby-blue: #e7f3ff;
+  --light-blue: #b3d4fc;
+  --blue-border: #80bfff;
+  --dark-blue: #0066cc;
+  --hover-blue: #cfe7ff;
+}
+
+.container-selector-colegios {
+  margin-top: 15%;
+}
+
+.container-selector-colegios h2 {
+  color: var(--dark-blue);
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lista-colegios {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.colegio-item {
+  background-color: #ffffff;
+  border: 2px solid var(--blue-border);
+  border-radius: 6px;
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.colegio-item:hover {
+  background-color: var(--hover-blue);
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.colegio-item:active {
+  transform: scale(0.98);
+  background-color: var(--light-blue);
+}
+
+.colegio-item:focus {
+  outline: none;
+  border-color: var(--dark-blue);
+}

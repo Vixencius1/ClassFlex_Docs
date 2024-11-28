@@ -1,0 +1,1 @@
+export { default as GestionAlumnosAdmin } from "./GestionAlumnosAdmin";

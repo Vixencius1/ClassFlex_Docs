@@ -1,0 +1,230 @@
+.form-add-alumno {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.form-add-alumno input {
+  width: 100%;
+}
+
+#container-lista-cursos {
+  margin-top: 3rem;
+  min-width: 100%;
+  padding: 2rem;
+}
+
+.form-edit-alumno {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.form-edit-alumno input {
+  width: 100%;
+}
+
+.table-list-alumnos {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* Panel izquierdo de asignación de alumnos a cursos */
+.lista-sin-curso {
+  list-style: none;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  height: 40vh;
+  overflow-y: auto;
+  text-align: left;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-sin-curso li {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.lista-sin-curso li:hover {
+  background-color: #e9ecef;
+}
+
+/* Panel derecho de asignación de alumnos a cursos */
+.lista-asignar-cursos {
+  list-style: none;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+  height: 40vh;
+  overflow-y: auto;
+  text-align: left;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-asignar-cursos li {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.lista-asignar-cursos li:hover {
+  background-color: #e9ecef;
+}
+
+/* Estilos para los selectores de curso del panel izquierdo y derecho */
+.selector-curso-izquierdo,
+.selector-curso-derecho {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.selector-curso-izquierdo:focus,
+.selector-curso-derecho:focus {
+  border-color: #80bdff;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Botón de asignar */
+#button-asignar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#button-asignar:hover {
+  background-color: #218838;
+}
+
+/* Estilos para switch de estado de cuenta de usuario */
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #3ca50b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+#btn-agregar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#btn-submit-agregar {
+  background-color: inherit;
+  color: black;
+  border: 2px solid #63aafa;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#btn-submit-agregar:hover {
+  background-color: #4d96ebc0;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .switch {
+    width: 40px;
+    height: 24px;
+  }
+
+  .slider:before {
+    height: 20px;
+    width: 20px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(15px);
+  }
+
+  .switch-container {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .switch-container {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}

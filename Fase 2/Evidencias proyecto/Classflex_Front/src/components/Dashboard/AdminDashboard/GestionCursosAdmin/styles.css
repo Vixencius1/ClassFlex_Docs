@@ -1,0 +1,138 @@
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: start;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
+  position: relative;
+}
+
+.titulo-seccion::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #4a90e2;
+  margin: 0.5rem;
+  border-radius: 2px;
+}
+
+.modal-add-curso {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.form-add-curso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.custom-select{
+  width: 10px;
+}
+
+#container-lista {
+  margin-top: 3rem;
+  min-width: 100%;
+  padding: 2rem;
+}
+
+.table-list-cursos {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 110%;
+  text-align: center;
+}
+
+#classflex-table {
+  margin-top: 1rem;
+  border: 2px solid #928f8fb0;
+  height: 95%;
+
+
+}
+
+#classflex-table th {
+  background-color: #63aafa;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+}
+
+#classflex-table td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-list-cursos th,
+.table-list-cursos td {
+  padding: 0.75rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+  vertical-align: middle;
+}
+
+.table-list-cursos tbody tr:hover {
+  background-color: #f9fafb;
+  cursor: pointer;
+}
+
+.modal-edit-curso {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.form-edit-curso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.btn-edit {
+  transition: color 0.5s ease-in-out;
+}
+
+.btn-edit:hover {
+  color: #e0c202;
+}
+
+#btn-delete {
+  transition: color 0.5s ease-in-out;
+}
+
+#btn-delete:hover {
+  color: #ff3333;
+}
+
+#btn-agregar {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#btn-submit-agregar-curso {
+  background-color: inherit;
+  border: 2px solid #63aafa;
+  border-radius: 15px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#btn-submit-agregar-curso:hover {
+  background-color: #4d96ebc0;
+  color: white;
+}

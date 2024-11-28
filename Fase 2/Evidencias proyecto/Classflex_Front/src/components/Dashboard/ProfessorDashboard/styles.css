@@ -1,0 +1,77 @@
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.button {
+  width: 10rem;
+  background-color: #007bff;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.folder-card {
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.folder-card:hover {
+  box-shadow: 0 2px 5px rgb(166, 204, 243);
+  
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+}
+
+.folder-vignette {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background-color: #51a0f4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+}
+
+.folder-card:hover .folder-vignette {
+  background-color: #3e8cc1;
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .button {
+    gap: 1rem;
+  }
+}

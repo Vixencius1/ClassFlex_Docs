@@ -1,0 +1,30 @@
+.custom-modal {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.custom-modal h3 {
+  background-color: #529ff1;
+  color: white;
+  padding: 2rem;
+}
+
+.modal-body input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.modal-body input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal-header {
+  background-color: #57a8ff;
+  color: white;
+}

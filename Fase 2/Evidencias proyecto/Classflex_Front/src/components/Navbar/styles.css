@@ -1,0 +1,147 @@
+:root {
+  --baby-blue: #e7f3ff;
+  --light-blue: #b3d4fc;
+  --dark-blue: #0066cc;
+  --hover-blue: #cfe7ff;
+  --medium-blue: #a2c2d7;
+}
+
+.navbar {
+  background-color: #f0f9ff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logout-button {
+  border-color: #007bff;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#logout-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  border-color: #007bff;
+}
+
+.user {
+  color: #0056b3;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #007bff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.back-button {
+  color: var(--dark-blue);
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  color: var(--medium-blue);
+  transform: scale(1.1);
+}
+
+.back-button:active {
+  color: var(--light-blue);
+  transform: scale(0.95);
+}
+
+#logo-classflex-navbar {
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+  max-height: 100px;
+  transition: width 0.3s, max-height 0.3s;
+}
+
+#navbar-brand {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.colegio-container {
+  padding: 10px;
+  background-color: var(--baby-blue);
+  border: 1px solid var(--light-blue);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.colegio-container h3 {
+  color: var(--dark-blue);
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.colegio-container h3:not(:last-child) {
+  color: #ff6347; /* Color de alerta en caso de "Colegio no encontrado" */
+}
+
+/* Estilos responsivos para mejorar en dispositivos pequeños */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .user {
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .user-name {
+    display: block;
+    max-width: 100%;
+  }
+
+  .logout-button {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .icon-spacing {
+    margin-right: 4px;
+  }
+
+  #logo-classflex-navbar {
+    top: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .user {
+    margin: 1rem;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+
+  #logo-classflex-navbar {
+    position: relative;
+    top: 0px;
+  }
+}
