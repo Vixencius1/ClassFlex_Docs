@@ -67,6 +67,7 @@ function TablaAlumnos({ alumnos, onEditAlumno }) {
             >
               <thead className="table-header">
                 <tr>
+                  <th>Curso</th>
                   <th>RUT</th>
                   <th>Nombre</th>
                   <th>Apellido paterno</th>
